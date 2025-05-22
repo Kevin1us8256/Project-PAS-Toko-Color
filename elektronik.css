@@ -9,7 +9,7 @@ body {
     margin-top: 20px; /* Jarak dari atas halaman */
 }
 
-/* Sidebar Styling (dari Screenshot 2025-05-22 172354.jpg) */
+/* Sidebar Styling */
 .sidebar {
     background-color: #fff;
     padding: 20px;
@@ -42,7 +42,7 @@ body {
 }
 
 .sidebar ul li a:hover {
-    color: #ee4d2d; /* Warna hover Shopee */
+    color: lightblue;
 }
 
 .sidebar .filter-section {
@@ -53,7 +53,7 @@ body {
     color: #555;
 }
 
-/* Promo Banner Styling (dari Screenshot 2025-05-22 172531.jpg) */
+/* Promo Banner Styling */
 .promo-banner {
     background-color: #d1eff0; /* Warna background mirip gambar */
     border-radius: 8px;
@@ -105,7 +105,7 @@ body {
 }
 
 .promo-banner .image-content img {
-    width: 120px; /* Lebar gambar smartwatch */
+    width: 120px; /* Lebar gambar handphone */
     height: auto;
     border: 5px solid #fff; /* Border putih seperti foto polaroid */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -142,7 +142,7 @@ body {
 
 .brand-header a {
     font-size: 0.9rem;
-    color: #ee4d2d; /* Warna link Shopee */
+    color: royalblue;
     text-decoration: none;
     font-weight: bold;
 }
@@ -179,7 +179,7 @@ body {
     opacity: 1;
 }
 
-/* Product Card Styling (dari Screenshot 2025-05-22 172354.jpg) */
+/* Product Card Styling */
 .product-card {
     border: 1px solid #eee;
     border-radius: 4px;
@@ -216,7 +216,7 @@ body {
 .product-card .card-text.price {
     font-size: 1.1rem;
     font-weight: bold;
-    color: #ee4d2d; /* Warna oranye Shopee */
+    color: blue;
     margin-bottom: 5px;
 }
 
