@@ -1,0 +1,278 @@
+/* css/main.css */
+
+body {
+    background-color: #f0f2f5; /* Background abu-abu terang */
+    font-family: Arial, sans-serif;
+}
+
+.main-wrapper {
+    margin-top: 20px; /* Jarak dari atas halaman */
+}
+
+/* Sidebar Styling (dari Screenshot 2025-05-22 172354.jpg) */
+.sidebar {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 4px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.08);
+    margin-bottom: 20px; /* Margin bawah untuk mobile/tablet */
+}
+
+.sidebar h5 {
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+.sidebar ul li {
+    margin-bottom: 8px;
+}
+
+.sidebar ul li a {
+    color: #555;
+    text-decoration: none;
+    display: block; /* Agar seluruh area li bisa diklik */
+    padding: 5px 0;
+}
+
+.sidebar ul li a:hover {
+    color: #ee4d2d; /* Warna hover Shopee */
+}
+
+.sidebar .filter-section {
+    margin-bottom: 20px;
+}
+
+.sidebar .form-check-label {
+    color: #555;
+}
+
+/* Promo Banner Styling (dari Screenshot 2025-05-22 172531.jpg) */
+.promo-banner {
+    background-color: #d1eff0; /* Warna background mirip gambar */
+    border-radius: 8px;
+    padding: 30px 20px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column; /* Default stack for mobile */
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.promo-banner .text-content {
+    flex-grow: 1;
+    z-index: 1;
+    margin-bottom: 20px; /* Jarak bawah teks untuk mobile */
+}
+
+.promo-banner h2 {
+    font-size: 2.2rem;
+    font-weight: bold;
+    color: #005666; /* Warna teks gelap sesuai gambar */
+    line-height: 1.2;
+    margin-bottom: 10px;
+}
+
+.promo-banner .discount {
+    font-size: 2.8rem;
+    font-weight: bold;
+    color: #28a745; /* Warna hijau terang untuk diskon */
+    margin-bottom: 0;
+}
+
+.promo-banner .discount span {
+    font-size: 1.5rem; /* Ukuran teks "S/D" */
+    font-weight: normal;
+    vertical-align: middle;
+}
+
+.promo-banner .image-content {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-shrink: 0;
+    z-index: 0;
+}
+
+.promo-banner .image-content img {
+    width: 120px; /* Lebar gambar smartwatch */
+    height: auto;
+    border: 5px solid #fff; /* Border putih seperti foto polaroid */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transform: rotate(5deg); /* Rotasi sedikit untuk efek polaroid */
+}
+
+.promo-banner .image-content img:nth-child(2) {
+    transform: rotate(-5deg); /* Rotasi berlawanan untuk gambar kedua */
+    position: relative;
+    left: -20px; /* Sedikit tumpang tindih */
+}
+
+/* Brand Section Styling */
+.brand-section {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 4px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.08);
+    margin-bottom: 20px;
+}
+
+.brand-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.brand-header h5 {
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 0;
+}
+
+.brand-header a {
+    font-size: 0.9rem;
+    color: #ee4d2d; /* Warna link Shopee */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.brand-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr)); /* Default 2-3 kolom untuk mobile */
+    gap: 10px;
+}
+
+.brand-item {
+    text-align: center;
+    padding: 10px;
+    border: 1px solid #eee; /* Border tipis untuk setiap brand */
+    border-radius: 4px;
+    height: 80px; /* Tinggi seragam untuk item brand */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+}
+
+.brand-item img {
+    max-width: 90%;
+    max-height: 90%;
+    object-fit: contain;
+    filter: grayscale(100%); /* Efek grayscale pada logo */
+    opacity: 0.8;
+    transition: all 0.3s ease;
+}
+
+.brand-item:hover img {
+    filter: grayscale(0%); /* Warna asli saat hover */
+    opacity: 1;
+}
+
+/* Product Card Styling (dari Screenshot 2025-05-22 172354.jpg) */
+.product-card {
+    border: 1px solid #eee;
+    border-radius: 4px;
+    overflow: hidden;
+    text-decoration: none;
+    color: inherit;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.05);
+    transition: box-shadow 0.2s ease;
+}
+
+.product-card:hover {
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.product-card img {
+    width: 100%;
+    height: 180px; /* Tinggi gambar produk seragam */
+    object-fit: contain;
+}
+
+.product-card .card-body {
+    padding: 10px;
+}
+
+.product-card .card-title {
+    font-size: 0.9rem;
+    height: 3em; /* Batasi tinggi untuk 2 baris teks */
+    overflow: hidden;
+    margin-bottom: 5px;
+    line-height: 1.5em;
+    color: #333;
+}
+
+.product-card .card-text.price {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #ee4d2d; /* Warna oranye Shopee */
+    margin-bottom: 5px;
+}
+
+.product-card .card-text.location {
+    font-size: 0.8rem;
+    color: #777;
+    margin-bottom: 0;
+}
+
+/* Media Queries untuk responsivitas */
+@media (min-width: 768px) { /* Medium devices (md) */
+    .promo-banner {
+        flex-direction: row; /* Horizontal layout for desktop */
+        text-align: left;
+        padding: 40px 30px;
+    }
+    .promo-banner .text-content {
+        margin-bottom: 0;
+        padding-right: 30px;
+    }
+    .promo-banner h2 {
+        font-size: 2.8rem;
+    }
+    .promo-banner .discount {
+        font-size: 3.5rem;
+    }
+    .promo-banner .image-content img {
+        width: 150px;
+    }
+    .promo-banner .image-content img:nth-child(2) {
+        left: -30px;
+    }
+
+    .brand-grid {
+        grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    }
+    .sidebar {
+        margin-bottom: 0; /* Hapus margin bawah di desktop */
+    }
+}
+
+@media (min-width: 992px) { /* Large devices (lg) */
+    .promo-banner h2 {
+        font-size: 3.2rem;
+    }
+    .promo-banner .discount {
+        font-size: 4rem;
+    }
+    .promo-banner .image-content img {
+        width: 180px;
+    }
+    .promo-banner .image-content img:nth-child(2) {
+        left: -40px;
+    }
+    .brand-grid {
+        grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+        gap: 15px;
+    }
+}
