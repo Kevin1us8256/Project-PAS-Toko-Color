@@ -146,6 +146,7 @@
                             <div class="tab-content mt-3" id="myTabContent">
                                 <div class="tab-pane fade show active" id="pulsa" role="tabpanel" aria-labelledby="pulsa-tab">
                                     <div class="form-group">
+                                        <p>Konten Pulsa</p>
                                         <label for="nomorTeleponPulsa">Nomor Telepon</label>
                                         <input type="text" class="form-control" id="nomorTeleponPulsa" placeholder="Masukkan Nomor Telepon">
                                     </div>
@@ -163,6 +164,7 @@
 
                                 <div class="tab-pane fade" id="paket-data" role="tabpanel" aria-labelledby="paket-data-tab">
                                     <div class="form-group">
+                                        <p>Konten Data seluler</p>
                                         <label for="nomorTeleponPaket">Nomor Telepon</label>
                                         <input type="text" class="form-control" id="nomorTeleponPaket" placeholder="Masukkan Nomor Telepon">
                                     </div>
@@ -181,10 +183,35 @@
 
                                 <div class="tab-pane fade" id="listrik-pln" role="tabpanel" aria-labelledby="listrik-pln-tab">
                                     <p>Konten Listrik PLN</p>
+                                    <label for="nominalpaket">Nominal</label>
+                                        <select class="form-control" id="nominalpaket">
+                                            <option>50.000</option>
+                                            <option>100.000</option>
+                                            <option>250.000</option>
+                                            <option>300.000</option>
+                                        </select>
+                                        <br>
+                                        <button type="submit" class="btn btn-primary btn-block">Beli</button>
                                 </div>
-                                <div class="tab-pane fade" id="roaming" role="tabpanel" aria-labelledby="roaming-tab">
-                                    <p>Konten Roaming</p>
+                                
+                                <div class="tab-pane fade" id="roaming" role="tabpanel" aria-labelledby="roaming">
+                                    <div class="form-group">
+                                        <p>Konten Roaming</p>
+                                        <label for="nomorTeleponPaket">Nomor Telepon</label>
+                                        <input type="text" class="form-control" id="nomorTeleponPaket" placeholder="Masukkan Nomor Telepon">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="nominalroaming">Nominal</label>
+                                        <select class="form-control" id="nominalpaket">
+                                            <option>5GB</option>
+                                            <option>10GB</option>
+                                            <option>25GB</option>
+                                            <option>30GB</option>
+                                        </select>
+                                    </div>
+                                    <button type="submit" class="btn btn-primary btn-block">Beli</button>
                                 </div>
+                                
                             </div>
                         </div>
                     </div>
