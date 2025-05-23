@@ -34,6 +34,16 @@ h1 {
     margin-bottom: 20px;
 }
 
+.btn-success {
+    background-color: #172da9;
+    border-color: #283ba7;
+}
+
+.btn-success:hover {
+    background-color: #1747c1;
+    border-color: #157ea4;
+}
+
 /* Form Grid Layout */
 .form-grid {
     display: grid;

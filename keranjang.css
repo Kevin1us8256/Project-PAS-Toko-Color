@@ -1,0 +1,111 @@
+/* keranjang_style.css */
+
+body {
+    background-color: #f8f9fa; /* Warna latar belakang ringan */
+    font-family: sans-serif;
+}
+
+h1 {
+    color: #343a40;
+    margin-bottom: 1.5rem;
+    font-weight: 700;
+}
+
+/* Card styling for sections */
+.card {
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08); /* Sedikit bayangan untuk elevasi */
+}
+
+/* Checkbox styling */
+.form-check-input {
+    width: 1.25em;
+    height: 1.25em;
+    border-radius: 0.25em; /* Lebih kotak seperti di gambar */
+}
+
+/* Product item details */
+.product-item img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border: 1px solid #eee;
+}
+
+.product-item h6 {
+    font-size: 0.95rem;
+    color: #343a40;
+}
+
+.product-item small {
+    font-size: 0.85rem;
+}
+
+/* Quantity control */
+.quantity-control {
+    width: 100px; /* Lebar tetap untuk kontrol jumlah */
+}
+
+.quantity-control .form-control {
+    border-left: none;
+    border-right: none;
+    background-color: #f8f9fa; /* Latar belakang abu-abu muda untuk input jumlah */
+    text-align: center;
+}
+
+.quantity-control .btn {
+    border-color: #ced4da;
+    color: #6c757d;
+}
+
+.quantity-control .btn:hover {
+    background-color: #e9ecef;
+}
+
+/* Summary card on the right */
+.summary-card {
+    position: sticky; /* Agar tetap di posisi saat di-scroll */
+    top: 20px; /* Jarak dari atas */
+}
+
+.summary-card h5 {
+    color: #343a40;
+}
+
+.promo-alert {
+    background-color: #fff3cd; /* Warna kuning Bootstrap untuk alert */
+    border-color: #ffeeba;
+    color: #664d03;
+    font-size: 0.9rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.promo-alert .fa-tags {
+    color: #ffc107; /* Warna ikon tag */
+}
+
+.promo-alert .fa-angle-right {
+    color: #664d03;
+}
+
+.btn-success {
+    background-color: #28a745;
+    border-color: #28a745;
+}
+
+.btn-success:hover {
+    background-color: blu;
+    border-color: #1e7e34;
+}
+
+/* Responsive adjustments */
+@media (max-width: 767.98px) {
+    .summary-card {
+        position: static; /* Nonaktifkan sticky di mobile */
+        margin-top: 1.5rem;
+    }
+}

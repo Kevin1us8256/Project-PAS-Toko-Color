@@ -1,0 +1,108 @@
+/* product_detail.css */
+
+/* General body styles */
+body {
+    font-family: sans-serif;
+    background-color: #f8f9fa; /* Light gray background */
+}
+
+/* Main image */
+.main-image {
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Thumbnails */
+.thumbnail {
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.thumbnail:hover {
+    transform: scale(1.1);
+}
+
+/* Product details */
+h2 {
+    color: #343a40; /* Dark gray */
+    margin-bottom: 0.5rem;
+}
+
+.fa-star {
+    margin: 0 0.1rem;
+}
+
+h4.fw-bold {
+    color: #3930a6; /* Green for price */
+    margin-top: 0.5rem;
+}
+
+/* Stock card */
+.card {
+    border: none;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.card-title {
+    color: #343a40;
+    margin-bottom: 1rem;
+}
+
+.input-group {
+    margin-bottom: 1rem;
+}
+
+.btn-outline-secondary {
+    border-color: #ced4da;
+    color: #6c757d;
+}
+
+.btn-outline-secondary:hover {
+    background-color: #e9ecef;
+}
+
+.btn-success, .btn-primary {
+    color: white;
+}
+
+.btn-success {
+    background-color: #172da9;
+    border-color: #283ba7;
+}
+
+.btn-success:hover {
+    background-color: #1747c1;
+    border-color: #157ea4;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+}
+
+/* Store info */
+.rounded-circle {
+    background-color: #6c757d !important; /* Gray */
+}
+
+/* Discount card */
+.bg-light {
+    background-color: #f8f9fa !important;
+}
+
+.btn-warning {
+    color: #212529;
+    background-color: #ffc107;
+    border-color: #ffc107;
+}
+
+.btn-warning:hover {
+    background-color: #e0a800;
+    border-color: #d39e00;
+}
